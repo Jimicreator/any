@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """Hey there! My name is <b>Sophia.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!"""
+PM_START_TEXT = """Hey there! My name is <b> Jimi </b>\nI can help to manage your groups with useful features, 🙃 feel free to add me to your groups!"""
 
 buttons = [
     [
@@ -86,8 +86,8 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="Sophia News 🙋‍♀️ ", url=f"https://t.me/SophiaUpdates"),
-        InlineKeyboardButton(text="Support Group 💬 ", url=f"https://t.me/SophiaSupport_Official"),
+        InlineKeyboardButton(text="Jimi Channel🙋‍♀️ ", url=f"https://t.me/Movies_1st_On_Telegram"),
+        InlineKeyboardButton(text="Support Group 💬 ", url=f"https://t.me/https://t.me/Worldwide_English_Chatting_Group"),
     ],
     [
         InlineKeyboardButton(text="➕ Add me to your Group ➕", url="t.me/SophiaSLBot?startgroup=true"),   
@@ -95,10 +95,10 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-Hi Boss! I'm <b>Sophia</b>. An anime themed super powerful group management bot with many handy tools. So why are you waiting. Let me to assist you.
+Hi Boss! I'm <b>Jimi/b>. An anime themed super powerful group management bot with many handy tools. So why are you waiting. Let me to assist you.
 """
 
-DONATE_STRING = """ Join Updates Channel @SophiaUpdates | Support Group @SophiaSupport_Official"""
+DONATE_STRING = """ Join Updates Channel @Movies_1st_On_Telegram| Support Group @Worldwide_English_Chatting_Group """
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -207,7 +207,7 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text("Heya, Sophia here :) PM me if you have any questions how to use me!")
+        update.effective_message.reply_text("H! Jimi here :) PM me if you have any questions how to use me!")
 
 
 def error_handler(update, context):
@@ -433,8 +433,8 @@ def sophia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support Group", url="t.me/dihan_official"),
-                    InlineKeyboardButton(text="Updates Channel", url="t.me/dihanofficial"),
+                    InlineKeyboardButton(text="Support Group", url="t.me/Worldwide_English_Chatting_Group"),
+                    InlineKeyboardButton(text="Updates Channel", url="t.me/Movies_1st_On_Telegram"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="sophia_basichelp"),
@@ -445,7 +445,7 @@ def sophia_about_callback(update, context):
         )
     elif query.data == "sophia_credit":
         query.message.edit_text(
-            text=f"*Credit For Sophia's Devs*\n"
+            text=f"*Credit For Jimi Devs*\n"
             f"\nHere Some Developers Helping in Making The Sophia Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
