@@ -338,16 +338,16 @@ def sophia_about_callback(update, context):
     query = update.callback_query
     if query.data == "sophia_":
         query.message.edit_text(
-            text=""" My name is *Sophia*, I have been written with Pyrogram and Telethon.. I'm online since 10 June 2021 and is constantly updated!
+            text=""" My name is *Jimi*, I have been written with Pyrogram and Telethon.. I'm online since 10 June 2021 and is constantly updated!
 *Bot Version: 3.0*
 \n*Bot Developers:*
--  @dihanrandila
--  @InukaASiTH
-\n* Updates Channel:* @SophiaUpdates
-* Support Chat:* @SophiaSupport_Official
+-  @H43K3R
+-  @Anon_Player
+\n* Updates Channel:* @Movies_1st_On_Telegram
+* Support Chat:* @Worldwide_English_Chatting_Group
                  \n\n* And finally special thanks of gratitude to all my users who relied on me for managing their groups, I hope you will always like me; My developers are constantly working to improve me!
                  \n\n *Licensed under the GNU Affero General Public Lisence v3.0*
-                 \n© 2020 - 2021 @SophiaSLBot. All Rights Reserved """,
+                 \n© 2020 - 2021. All Rights Reserved """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -374,7 +374,7 @@ def sophia_about_callback(update, context):
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@SophiaSLBot` in that chat to refresh admin list in My database.\n"
+            f"\n• Than send `/admincache` in that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -446,13 +446,13 @@ def sophia_about_callback(update, context):
     elif query.data == "sophia_credit":
         query.message.edit_text(
             text=f"*Credit For Jimi Devs*\n"
-            f"\nHere Some Developers Helping in Making The Sophia Bot",
+            f"\nHere Some Developers Helping in Making This Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Dihan", url="t.me/dihanrandila"),
-                    InlineKeyboardButton(text="Inuka", url="t.me/InukaASiTH"),
+                    InlineKeyboardButton(text="Anon", url="t.me/H43k3r"),
+                    InlineKeyboardButton(text="Player", url="t.me/Anon_Player"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="sophia_basichelp"),
@@ -486,11 +486,11 @@ def Source_about_callback(update, context):
                     InlineKeyboardButton(text="❓ Basic Help", callback_data="sophia_basichelp"),
                   ],
                   [
-                    InlineKeyboardButton(text=" Special Credits ❤ ", url=f"https://telegra.ph/Special-Credits-08-21"),
+                    InlineKeyboardButton(text=" Special Group ❤ ", url=f"https://t.me/Worldwide_English_Chatting_Group"),
                     InlineKeyboardButton(text="Terms And Conditions 📄 ", url=f"https://telegra.ph/Terms-and-Conditions-08-21"),
                   ],
                   [
-                    InlineKeyboardButton(text="💾 Source Code", url=f"https://github.com/dihanofficial/SophiaBot"),
+                    InlineKeyboardButton(text="Support Group", url=f"https://t.me/Worldwide_English_Chatting_Group"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="source_back")
@@ -786,10 +786,10 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! 💫 | Join my Group @SophiaSupport_Official ❤")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! 💫 | Join my Group @Worldwide_English_Chatting_Group ❤")
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to Support Group, go and check!.| Support Group @SophiaSupport_Official ❤"
+                "Bot isnt able to send message to Support Group, go and check!.| Support Channel @Movies_1st_On_Telegram ❤"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
